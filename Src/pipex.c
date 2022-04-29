@@ -6,11 +6,11 @@
 /*   By: fgrossi <fgrossi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 16:33:05 by fgrossi           #+#    #+#             */
-/*   Updated: 2022/03/14 11:50:07 by fgrossi          ###   ########.fr       */
+/*   Updated: 2022/04/29 17:02:26 by fgrossi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../Include/pipex.h"
 
 char	*find_path(char *cmd, char **envp)
 {
@@ -85,7 +85,7 @@ void	child_process(char *ag, char **cmd1)
 	}
 }
 
-void	here_doc(char *ag, int ac)
+void	here_doc(char *ag)
 {
 	pid_t	read;
 	int		fd[2];
@@ -124,7 +124,7 @@ int	main(int ac, char **ag, char **envp)
 	{
 		i = 3;
 		f2 = open_file(ag[ac - 1], 0);
-		here_doc(ag[2], ac);
+		here_doc(ag[2]);
 	}
 	else
 	{

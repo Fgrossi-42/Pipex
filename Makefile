@@ -2,7 +2,7 @@
 NAME = pipex
 
 CC = gcc
-CLFAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 
 FILES = pipex \
@@ -10,29 +10,26 @@ FILES = pipex \
 		pipex_utils2 \
 		pipex_utils \
 
+SRCS_DIR = ./Src/
+SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
 
-SRCS = $(addsuffix .c, $(FILES))
+OBJS_DIR = ./Src/
+OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
 
-OBJS = $(addsuffix .o, $(FILES))
+.c.o: $(SRCS)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 $(NAME): $(OBJS)
 	$(CC) -o $(NAME) $^ 
 
-%.o : %.c
-	$(CC) -c $^ 
-
 all: $(NAME)
-
-deb: $(SRCS)
-	$(CC) $(CFLAGS) $^ -o $(NAME) -g
 
 clean:
 	$(RM) $(OBJS)
 
-fclean:
-	$(RM) $(OBJS) $(NAME)
+fclean: clean
+	$(RM) $(NAME)
 
 re: clean all
 
-.PHONY: all clean fclean re deb
-
+.PHONY: bonus all clean fclean re

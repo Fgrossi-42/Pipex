@@ -6,11 +6,11 @@
 /*   By: fgrossi <fgrossi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 10:10:54 by fgrossi           #+#    #+#             */
-/*   Updated: 2022/03/11 10:47:22 by fgrossi          ###   ########.fr       */
+/*   Updated: 2022/04/29 16:56:20 by fgrossi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../Include/pipex.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

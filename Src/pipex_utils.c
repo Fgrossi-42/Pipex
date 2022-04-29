@@ -6,11 +6,11 @@
 /*   By: fgrossi <fgrossi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 17:40:45 by fgrossi           #+#    #+#             */
-/*   Updated: 2022/03/14 12:00:52 by fgrossi          ###   ########.fr       */
+/*   Updated: 2022/04/29 16:56:18 by fgrossi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../Include/pipex.h"
 
 void	bad_argument(void)
 {

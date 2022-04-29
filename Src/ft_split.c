@@ -6,11 +6,11 @@
 /*   By: fgrossi <fgrossi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 14:19:09 by fgrossi           #+#    #+#             */
-/*   Updated: 2022/03/09 10:05:54 by fgrossi          ###   ########.fr       */
+/*   Updated: 2022/04/29 16:56:11 by fgrossi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../Include/pipex.h"
 
 static int	ft_is_charset(char str, char *charset)
 {
