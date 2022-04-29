@@ -5,4 +5,4 @@ we're not talking about the pipes from Mario but they do come close since both l
 
 remember kids, dont be bad to your parents, the child process always gets killed first
 
-having said this I have to legally say I don't partake in child murdering on the regular, sorry for the disappointment, i will try to change
+having said this I have to legally say I don't partake in child murdering on the regular, sorry for the disappointment, I will try to change
